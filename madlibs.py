@@ -1,17 +1,3 @@
-# def get_input(prompt, default=None, required=False):
-#     while True:
-#         raw = input(f"{prompt}" + (f" (default: {default}): " if default is not None else ": "))
-#         value = raw.strip()
-#         if value == "":
-#             if default is not None:
-#                 return default
-#             if required:
-#                 print("⚠️ This field is required — please enter something.")
-#                 continue
-#             return ""
-#         return value
-
-#Madlibs function
 def story_time():
     print("Please input the following to start the game!")
 
@@ -27,7 +13,7 @@ def story_time():
     story = f"""Once upon a time, {name} went to {place} looking all {adjective}. Suddenly, a talking goat walked up and said,
 "Yo {name}, nice shoes... are those wi-Fi enabled?"
 {name} tried  to ignore it but the goat kept saying "Baa-rilliant choice!"
-People were staring, {name}="Jack" panicked, and accidentally replied, "Thank you, Mr. Goat...' same to you."
+People were staring, {name} panicked, and accidentally replied, "Thank you, Mr. Goat...' same to you."
 \n That's when everyone in {place} realized...{name} had officially lost it. """
 
     print("Here is your Mad Libs story!")
@@ -35,3 +21,4 @@ People were staring, {name}="Jack" panicked, and accidentally replied, "Thank yo
 
 
 story_time()
+
