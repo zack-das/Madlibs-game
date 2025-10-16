@@ -1,15 +1,15 @@
-def get_input(prompt, default=None, required=False):
-    while True:
-        raw = input(f"{prompt}" + (f" (default: {default}): " if default is not None else ": "))
-        value = raw.strip()
-        if value == "":
-            if default is not None:
-                return default
-            if required:
-                print("⚠️ This field is required — please enter something.")
-                continue
-            return ""
-        return value
+# def get_input(prompt, default=None, required=False):
+#     while True:
+#         raw = input(f"{prompt}" + (f" (default: {default}): " if default is not None else ": "))
+#         value = raw.strip()
+#         if value == "":
+#             if default is not None:
+#                 return default
+#             if required:
+#                 print("⚠️ This field is required — please enter something.")
+#                 continue
+#             return ""
+#         return value
 
 #Madlibs function
 def story_time():
@@ -18,7 +18,9 @@ def story_time():
 
 #User's input
     # name = input("Enter a name (default: "Isack"):").strip()
-    name = get_input("Enter a name", default="Isack", required=True)
+    name = input("Enter a name:").strip()
+    if name == "":
+        name = "Maxyme"
     place = input("Enter a place:")
     adjective = input("Enter an adjective:")
 
